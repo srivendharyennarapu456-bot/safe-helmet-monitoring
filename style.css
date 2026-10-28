@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #eef1f5;
+
+    color: #222;
+}
+
+
+.container {
+    width: 92%;
+
+    max-width: 900px;
+
+    margin: 20px auto;
+}
+
+
+/* HEADER */
+
+header {
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 18px 15px;
+
+    border-radius: 10px;
+
+    margin-bottom: 18px;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+
+    font-size: 15px;
+
+    color: #dddddd;
+}
+
+
+/* TWO COLUMNS */
+
+.dashboard {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+}
+
+
+/* CARDS */
+
+.card {
+
+    background: white;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* CARD TITLE */
+
+.card h2 {
+
+    margin: 0 0 12px 0;
+
+    font-size: 19px;
+}
+
+
+/* ROW */
+
+.info-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.info-row:last-child {
+
+    border-bottom: none;
+}
+
+
+.info-row span {
+
+    font-size: 15px;
+
+    color: #444;
+}
+
+
+.info-row strong {
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    text-align: right;
+}
+
+
+/* RED DANGER / ALERT */
+
+.danger {
+
+    color: #d32f2f !important;
+}
+
+
+/* MAP BUTTON */
+
+.map-button {
+
+    display: block;
+
+    margin-top: 14px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    background: #1976d2;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+.map-button:hover {
+
+    background: #125ca5;
+}
+
+
+/* FIREBASE CONNECTION */
+
+.connection {
+
+    text-align: center;
+
+    padding: 11px;
+
+    margin-top: 16px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 2px 7px rgba(0, 0, 0, 0.07);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .dashboard {
+
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+
+        width: 94%;
+    }
+
+    header h1 {
+
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Safe Helmet Monitoring</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <h1>🪖 Safe Helmet Monitoring</h1>
+        <p>Construction Worker Safety Dashboard</p>
+    </header>
+
+
+    <!-- TWO COLUMN LAYOUT -->
+    <div class="dashboard">
+
+
+        <!-- EMPLOYEE INFORMATION -->
+        <div class="card">
+
+            <h2>👷 Employee Information</h2>
+
+            <div class="info-row">
+                <span>Employee ID</span>
+                <strong id="employeeId">Loading...</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Status</span>
+                <strong id="status">Loading...</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Activity Status</span>
+                <strong id="activityStatus">Loading...</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Alert</span>
+                <strong id="alert">Loading...</strong>
+            </div>
+
+        </div>
+
+
+        <!-- SENSOR INFORMATION -->
+        <div class="card">
+
+            <h2>📡 Sensor Information</h2>
+
+            <div class="info-row">
+                <span>Gas Level</span>
+                <strong id="gas">Loading...</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Acceleration</span>
+                <strong id="acceleration">Loading...</strong>
+            </div>
+
+        </div>
+
+
+        <!-- WORKER LOCATION -->
+        <div class="card">
+
+            <h2>📍 Worker Location</h2>
+
+            <div class="info-row">
+                <span>Latitude</span>
+                <strong id="latitude">Loading...</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Longitude</span>
+                <strong id="longitude">Loading...</strong>
+            </div>
+
+            <a id="mapLink"
+               class="map-button"
+               href="#"
+               target="_blank">
+
+                📍 Open Location
+
+            </a>
+
+        </div>
+
+
+        <!-- SYSTEM INFORMATION -->
+        <div class="card">
+
+            <h2>⚙️ System Information</h2>
+
+            <div class="info-row">
+                <span>Last Update</span>
+                <strong id="lastUpdate">Waiting...</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONNECTION -->
+    <div id="connectionStatus" class="connection">
+        Connecting to Firebase...
+    </div>
+
+</div>
+
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
